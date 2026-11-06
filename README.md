@@ -1,6 +1,6 @@
 # ESA Email Summary Assistant
 
-Prose word count: 837 (whitespace count excluding headings, this line, and list markers).
+Prose word count: 852 (whitespace count excluding headings, this line, and list markers).
 
 A local interactive prototype for checking simulated AI summaries of university emails. The project continues the A1 investigation into source links, student verification, and the separate problem of omitted requirements.
 
@@ -52,5 +52,7 @@ Scope decision, 6 November 2026: the student chose not to add specific omission 
 Codex generated the initial HTML, CSS, JavaScript, and documentation from the student's request and A1 context. This initial code is assisted work. The student should inspect and adapt it, record actual checks and decisions, and cite relevant commits. Do not claim student review or testing before completing it.
 
 ## Submission
+
+Current prototype draft snapshot: [db98b8e](https://github.com/dawsen1208/esa-email-summary-assistant/commit/db98b8ee3a69b31ad9111f97e773b48f627aabca). This is an uploaded development snapshot, not the final submission.
 
 Repository: https://github.com/dawsen1208/esa-email-summary-assistant. Final submitted commit remains to be selected after screenshots and reference checks. The [English report draft](A2-report-draft.md) includes the architecture diagram and figure placeholders. Follow the [bilingual screenshot checklist](screenshot-checklist.md) to capture three interaction sequences. The report remains a draft: actual screenshots, final reference checks and the final submission identifier are outstanding. Local course PDFs, extracted lecture text and private authoring notes are excluded from this repository. Use fictional data only in this demonstration.

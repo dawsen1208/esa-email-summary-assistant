@@ -10,7 +10,9 @@ README: https://github.com/dawsen1208/esa-email-summary-assistant/blob/main/READ
 
 Development record: https://github.com/dawsen1208/esa-email-summary-assistant/blob/main/development-feedback.md
 
-Submitted commit or release: pending final submission selection; current draft snapshot to be recorded after upload.
+Current prototype draft snapshot: https://github.com/dawsen1208/esa-email-summary-assistant/commit/db98b8ee3a69b31ad9111f97e773b48f627aabca
+
+Final submitted commit or release: pending completion of screenshots and final checks.
 
 ## Abstract
 

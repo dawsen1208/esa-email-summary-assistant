@@ -1,5 +1,11 @@
 # ESA 学生试用反馈与修改记录
 
+## A2 报告整理与验证
+
+完成 A2-report.md 和 output/pdf/ESA_A2_Report.pdf，正文 1005 字、摘要 187 字，总计 1192 字。使用已核查课程概念和四篇 A1 文献，出版记录核对 ACL Anthology 与 Microsoft Research。课件封面为 University of Birmingham，未给明确年份，使用 n.d.，不猜测个人作者。
+
+系统图区分真实界面、模拟输出和计划功能；三个分镜用 PDF 局部视图展示学生原图，不改变 PNG 内容或状态。八页渲染逐页检查。报告记录学生决定与 Codex 协助，不将状态脚本或截图当作独立实验。引用固定原型与截图版本 3a4497c，后续提交只补充报告及文档。
+
 ## 图 4d 替换并解决状态差异
 
 学生提供完成复核后的新截图，替换 10-review-finished.png。图 4c 与图 4d 的 checklist 均显示 Edited by you；4d 同时显示 Full email reviewed by you、原有完成提示，并收起复核卡片。当前报告与清单中的连续性警示已移除；此前记录保留为修订历史。这些截图仅支持已展示的操作状态，不代表全面测试或自动遗漏检测。

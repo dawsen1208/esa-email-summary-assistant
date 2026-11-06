@@ -1,0 +1,4 @@
+# Optional: only needed to rebuild the PDF, not to run ESA.
+reportlab>=4,<5
+pypdf>=5,<7
+Pillow>=10,<13

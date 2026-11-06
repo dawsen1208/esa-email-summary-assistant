@@ -1,5 +1,7 @@
 # ESA Email Summary Assistant
 
+Historical draft. The completed report is [A2-report.md](A2-report.md), with the formatted [PDF](output/pdf/ESA_A2_Report.pdf). This file is retained for development history.
+
 Xuran Ding
 
 Total report word count: 1,188 (abstract 187; main report 1,001, including section headings). Whitespace-based count; figures, references and submission links excluded.

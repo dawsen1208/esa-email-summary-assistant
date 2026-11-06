@@ -1,20 +1,24 @@
 # ESA 学生试用反馈与修改记录
 
+## 图 4d 替换并解决状态差异
+
+学生提供完成复核后的新截图，替换 10-review-finished.png。图 4c 与图 4d 的 checklist 均显示 Edited by you；4d 同时显示 Full email reviewed by you、原有完成提示，并收起复核卡片。当前报告与清单中的连续性警示已移除；此前记录保留为修订历史。这些截图仅支持已展示的操作状态，不代表全面测试或自动遗漏检测。
+
 ## 图 4c 替换
 
-按学生要求用新截图替换 09-checklist-added.png。新图显示 Edited by you；报告图注已更新。图 4d 仍为 Added by you，因此暂不将两张图表述为连续状态转换。此前关于旧图 Confirmed by you 的记录保留为历史说明。
+按学生要求用新截图替换 09-checklist-added.png。新图显示 Edited by you，图注按此更新。随后学生再次补拍图 4d，当前两张图状态一致，相关问题已解决。
 
 ## 图 4 操作截图证据
 
-学生提供四张截图，展示人工全文复核、填写 ethics checklist 及 9 November 2026 12:00、第三张任务卡片，以及完成全文复核后指导卡片收起与原完成提示。第三张 checklist 显示 Confirmed by you，第四张显示 Added by you；两图不能作为未中断的状态转换证据。原图均保留，报告按实际状态标注，并建议补一张刚新增后尚未确认的 4c。未将这些演示写作遗漏检测或独立用户实验。
+学生提供四张截图，展示人工全文复核、填写 ethics checklist 及 9 November 2026 12:00、第三张任务卡片，以及完成全文复核后指导卡片收起与原完成提示。首次提交的后两张状态不一致，随后由学生补拍替换，当前均显示 Edited by you。旧图仅可从 Git 历史追溯，当前报告使用替换版本。未将这些演示写作遗漏检测或独立用户实验。
 
 ## 图 3 操作截图证据
 
-学生提供两张截图：第一张显示 consent form 来源高亮，卡片仍为 Needs checking，进度为 1 of 2；第二张显示 Confirmed by you，进度为 2 of 2，同时全文复核仍为未完成。两图展示单项确认与全文复核状态分离。原图归档为 05-consent-evidence.png 和 06-consent-confirmed.png，并加入报告；这是操作演示证据，不是独立用户实验。图 4 尚待提供。
+学生提供两张截图：第一张显示 consent form 来源高亮，卡片仍为 Needs checking，进度为 1 of 2；第二张显示 Confirmed by you，进度为 2 of 2，同时全文复核仍为未完成。两图展示单项确认与全文复核状态分离。原图归档为 05-consent-evidence.png 和 06-consent-confirmed.png，并加入报告；这是操作演示证据，不是独立用户实验。后续图 4 已补齐。
 
 ## 图 2 操作截图证据
 
-学生提供四张实际操作截图，按顺序显示：初始 proposal 卡片的 6 November 2026 12:00 错误日期；选中卡片和高亮原文的 9 November 2026 12:00；编辑表单中填写正确日期；保存后 Edited by you 和 1 of 2 tasks checked。原图复制到 assets/storyboards/01–04 文件并插入报告。这支持此条演示流程的可视证据，不等于独立用户实验、全面浏览器测试或性能评估。图 3 和图 4 尚待补齐。
+学生提供四张实际操作截图，按顺序显示：初始 proposal 卡片的 6 November 2026 12:00 错误日期；选中卡片和高亮原文的 9 November 2026 12:00；编辑表单中填写正确日期；保存后 Edited by you 和 1 of 2 tasks checked。原图复制到 assets/storyboards/01–04 文件并插入报告。这支持此条演示流程的可视证据，不等于独立用户实验、全面浏览器测试或性能评估。后续图 3 和图 4 已补齐。
 
 ## 顶部空间调整
 

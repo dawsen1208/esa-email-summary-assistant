@@ -12,7 +12,7 @@ Development record: https://github.com/dawsen1208/esa-email-summary-assistant/bl
 
 Current prototype draft snapshot: https://github.com/dawsen1208/esa-email-summary-assistant/commit/db98b8ee3a69b31ad9111f97e773b48f627aabca
 
-Final submitted commit or release: pending completion of screenshots and final checks.
+Final submitted commit or release: pending final evidence presentation and reference checks.
 
 ## Abstract
 
@@ -135,9 +135,9 @@ Confirmation records the student's judgement.
 
 **4d Full-email review acknowledged**
 
-![Figure 4d Completion message and Full email reviewed by you; guidance hidden; checklist labelled Added by you](assets/storyboards/10-review-finished.png)
+![Figure 4d Completion message and Full email reviewed by you; guidance hidden; checklist retains Edited by you](assets/storyboards/10-review-finished.png)
 
-Panels 4c and 4d show different checklist states: Edited by you and Added by you. They are not an uninterrupted transition.
+The checklist retains Edited by you as the student completes full-email review.
 
 The student finds the omission; ESA records the addition and acknowledgement.
 

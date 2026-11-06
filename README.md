@@ -1,6 +1,6 @@
 # ESA Email Summary Assistant
 
-Prose word count: 913 (whitespace count excluding headings, this line, and list markers).
+Prose word count: 907 (whitespace count excluding headings, this line, and list markers).
 
 A local interactive prototype for checking simulated AI summaries of university emails. The project continues the A1 investigation into source links, student verification, and the separate problem of omitted requirements.
 
@@ -53,8 +53,8 @@ Codex generated the initial HTML, CSS, JavaScript, and documentation from the st
 
 ## Submission
 
-All ten student-supplied screenshots are available in `assets/storyboards/` and embedded in the report draft. They show deadline correction, consent-form confirmation and manual addition followed by full-email review. Figure 4 has a documented continuity difference: the checklist is Edited by you in panel 4c and Added by you in 4d. These images document demonstration states, not an independent user study or complete browser test.
+All ten student-supplied screenshots are available in `assets/storyboards/` and embedded in the report draft. They show deadline correction, consent-form confirmation and manual addition followed by full-email review. Replacement panels 4c and 4d retain the same Edited by you checklist status, resolving the earlier inconsistency. These images document demonstration states, not an independent user study or complete browser test.
 
 Current prototype draft snapshot: [db98b8e](https://github.com/dawsen1208/esa-email-summary-assistant/commit/db98b8ee3a69b31ad9111f97e773b48f627aabca). This is an uploaded development snapshot, not the final submission.
 
-Repository: https://github.com/dawsen1208/esa-email-summary-assistant. Final submitted commit remains to be selected after evidence and reference checks. The [English report draft](A2-report-draft.md) includes the architecture diagram and all three illustrated examples. See the [bilingual screenshot checklist](screenshot-checklist.md) for the Figure 4 continuity check. Final reference checks, evidence presentation and the final submission identifier remain outstanding. Local course PDFs, extracted lecture text and private authoring notes are excluded from this repository. Use fictional data only in this demonstration.
+Repository: https://github.com/dawsen1208/esa-email-summary-assistant. Final submitted commit remains to be selected after evidence and reference checks. The [English report draft](A2-report-draft.md) includes the architecture diagram and all three illustrated examples. See the [bilingual screenshot checklist](screenshot-checklist.md) for the completed capture record. Final reference checks, evidence presentation and the final submission identifier remain outstanding. Local course PDFs, extracted lecture text and private authoring notes are excluded from this repository. Use fictional data only in this demonstration.

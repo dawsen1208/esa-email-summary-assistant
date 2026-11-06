@@ -1,8 +1,8 @@
 # ESA 操作截图清单 Interaction screenshot checklist
 
-Status: all ten student-supplied screenshots are stored in `assets/storyboards/` and embedded in the draft. The replacement panel 4c shows Edited by you, while panel 4d shows Added by you. A continuity check remains: capture 4c immediately after adding, or replace 4d with completion of the same edited-task run. A video is not required.
+Status: all ten student-supplied screenshots are stored in `assets/storyboards/` and embedded in the draft. Replacement panels 4c and 4d both show Edited by you; the earlier checklist-state inconsistency is resolved. A video is not required.
 
-状态：十张学生截图已全部收到、归档并插入草稿。替换后的 4c 为 Edited by you，4d 为 Added by you，仍需核对连续性。可截取刚新增后的 4c，或在这次编辑后直接完成复核并替换 4d。无需视频。
+状态：十张学生截图已全部收到、归档并插入草稿。替换后的 4c 和 4d 均为 Edited by you，先前 checklist 状态不一致的问题已解决。无需视频。
 
 ## 图 2 纠正错误日期 Figure 2 Correct an inaccurate deadline
 
@@ -36,14 +36,14 @@ Caption: Confirmation records the student's judgement, not automated verificatio
 
 ## 图 4 补充遗漏事项 Figure 4 Add an omitted requirement
 
-Received / 已收到：四张截图已保存，4c 已按学生要求替换为新图。新图包含编辑操作，与原计划中“刚新增”的状态不同；报告已据实标注，没有修改截图内容。
+Complete / 已完成：四张截图已保存，4c 和 4d 已按学生要求替换。最终分镜展示手动复核、新增表单、编辑后的新增任务和全文复核完成状态；报告按截图实际标签标注，没有修改截图内容。
 
 7. `07-manual-review.png`: select Review full email. Include the ethics-checklist sentence and manual review guidance. The system does not flag this specific omission.
    中文：点击 Review full email，截取 ethics checklist 原文要求和人工复核引导。系统不会自动标记这项遗漏。
 8. `08-add-checklist.png`: select Add new task in Anything missing?; show the form with the checklist action and 9 November 2026 at 12:00 entered.
    中文：点击 Anything missing? 中的 Add new task；表单填写附上 ethics checklist 的要求，日期为 2026 年 11 月 9 日 12:00。
-9. `09-checklist-added.png`: save; show the new Added by you card.
-   中文：保存后，截取新生成的 Added by you 卡片。
+9. `09-checklist-added.png`: the supplied replacement shows the manually added checklist after editing, labelled Edited by you.
+   中文：当前替换图展示手动新增任务编辑保存后的状态，标签为 Edited by you。
 10. `10-review-finished.png`: select Finish full-email review. Capture the existing completion message and Full email reviewed by you status; the guidance card should be hidden. Reopen review first if necessary.
     中文：点击 Finish full-email review，截取原有完成提示和 Full email reviewed by you 状态；复核卡片应已收起。如卡片已关闭，先重新打开。
 

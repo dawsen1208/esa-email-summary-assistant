@@ -1,5 +1,9 @@
 # ESA 学生试用反馈与修改记录
 
+## 图 4 操作截图证据
+
+学生提供四张截图，展示人工全文复核、填写 ethics checklist 及 9 November 2026 12:00、第三张任务卡片，以及完成全文复核后指导卡片收起与原完成提示。第三张 checklist 显示 Confirmed by you，第四张显示 Added by you；两图不能作为未中断的状态转换证据。原图均保留，报告按实际状态标注，并建议补一张刚新增后尚未确认的 4c。未将这些演示写作遗漏检测或独立用户实验。
+
 ## 图 3 操作截图证据
 
 学生提供两张截图：第一张显示 consent form 来源高亮，卡片仍为 Needs checking，进度为 1 of 2；第二张显示 Confirmed by you，进度为 2 of 2，同时全文复核仍为未完成。两图展示单项确认与全文复核状态分离。原图归档为 05-consent-evidence.png 和 06-consent-confirmed.png，并加入报告；这是操作演示证据，不是独立用户实验。图 4 尚待提供。

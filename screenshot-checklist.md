@@ -1,10 +1,12 @@
 # ESA 操作截图清单 Interaction screenshot checklist
 
-Status: capture plan only. No screenshots are included yet. Use the current prototype, retain readable text and show both the relevant action and resulting state. Screenshots can be combined into three labelled storyboard figures; a video is not required.
+Status: Figure 2 complete with four student-supplied screenshots in `assets/storyboards/`. Figures 3 and 4 remain pending. Use the current prototype, retain readable text and show both the relevant action and resulting state. Screenshots can be combined into three labelled storyboard figures; a video is not required.
 
-状态：目前是截图计划，尚未附截图。使用当前原型，确保文字清楚，并展示操作与结果。截图可组合为三组 storyboard，无需录制视频。
+状态：图 2 的四张学生操作截图已收到并存入 `assets/storyboards/`；图 3 和图 4 尚待提供。使用当前原型，确保文字清楚，并展示操作与结果。截图可组合为三组 storyboard，无需录制视频。
 
 ## 图 2 纠正错误日期 Figure 2 Correct an inaccurate deadline
+
+Complete / 已完成：四张原图已按以下顺序归档，未修改截图内容，并已插入报告草稿。
 
 1. `01-proposal-before.png`: proposal task showing 6 November 2026 at 12:00 and Needs checking.
    中文：修改前的 proposal 卡片，显示错误日期 2026 年 11 月 6 日 12:00，以及 Needs checking。

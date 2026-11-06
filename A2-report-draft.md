@@ -89,7 +89,21 @@ Prepared data replaces model inference. All changes remain in the browser page.
 
 ### Figure 2 Correcting a deadline
 
-[Insert actual screenshot sequence: incorrect task → highlighted source → edited date → saved card.]
+**2a Suggested deadline before checking**
+
+![Figure 2a Proposal task with the incorrect 6 November deadline and Needs checking status](assets/storyboards/01-proposal-before.png)
+
+**2b Source evidence selected**
+
+![Figure 2b Selected proposal card and highlighted source stating 9 November 2026 at 12:00](assets/storyboards/02-proposal-evidence.png)
+
+**2c Student edits the deadline**
+
+![Figure 2c Edit task dialog with 9 November 2026 at 12:00 entered before saving](assets/storyboards/03-proposal-edit.png)
+
+**2d Correction saved**
+
+![Figure 2d Saved task showing 9 November at 12:00, Edited by you and 1 of 2 tasks checked](assets/storyboards/04-proposal-saved.png)
 
 Source checked; deadline corrected by the student.
 

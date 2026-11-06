@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ESA — Email Summary Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="desk.css">
+  <link rel="stylesheet" href="correspondence.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="compact-header">
+  <header class="topbar"><a class="brand" href="index.html" aria-label="ESA home"><span class="logo">e↗</span><span>ESA<small>Email Summary Assistant</small></span></a><span class="prototype"><span class="dot"></span> LOCAL DEMO / YOUR EMAIL, YOUR CALL</span></header>
+  <main>
+    <section class="intro"><div><p class="eyebrow">YOUR EMAIL CHECKING DESK</p><h1>Less scrolling. More <em>certainty.</em></h1><p>Check the source. Confirm or correct. Keep what matters.</p></div><aside class="desk-note"><span class="note-pin" aria-hidden="true">✳</span><p class="handwritten">One email. Your final say.</p></aside></section>
+    <details class="demo-note"><summary>About this demo <span>Fictional email · Simulated AI</span></summary><p>Suggestions and evidence links are prepared demo data. No AI model or email account is connected. One deadline is deliberately incorrect and one action is omitted for checking practice.</p><button id="reset" class="text-button">Reset demo</button></details>
+    <div class="desk-toolbar"><span><span class="dot" aria-hidden="true"></span> RESEARCH METHODS</span><span>THE SOURCE ↔ YOUR DECISIONS</span></div>
+    <div class="correspondence-strip" aria-hidden="true"><span class="handwritten">a little order for your inbox</span><span class="post-route">INBOX ─ ─ ─ ↗ CLARITY</span><span class="mini-envelope">✉</span></div>
+    <div class="workspace">
+      <section class="panel email-panel" aria-labelledby="email-heading">
+        <div class="panel-heading"><div><p class="eyebrow">01 / SOURCE</p><h2 id="email-heading">Original email</h2></div><span class="tag">Always available</span></div>
+        <article class="email"><p class="sender"><span class="avatar">ML</span><span><strong>Module teaching team</strong><br><small>teaching@example.edu · 3 November 2026</small></span></p><h3>Research methods — submission reminders</h3><p>Hi everyone,</p><p>Please check the requirements below before submitting your research proposal.</p><p id="source-proposal" class="source-passage" tabindex="-1">Submit your research proposal as a PDF through the module portal by <strong>12:00 on Monday 9 November 2026</strong>.</p><p id="source-consent" class="source-passage" tabindex="-1">Upload your completed consent form to the same portal by <strong>17:00 on Wednesday 11 November 2026</strong>.</p><p id="source-checklist" class="source-passage" tabindex="-1">You must also <strong>attach the completed ethics checklist to your proposal submission</strong>. This has the same deadline as the proposal.</p><p>The optional drop-in session is on Friday afternoon. Attendance is not a submission requirement.</p><p>Best wishes,<br>Module teaching team</p></article>
+        <div id="review-guide" class="review-guide" hidden><h3>Review for missing requirements</h3><p>Read the whole email, including requirements that have no summary card. Check attachments, submission locations and separate deadlines.</p><p>This is a manual review prompt. The system has not detected omissions for you.</p><button id="finish-review" class="secondary" type="button">Finish full-email review</button></div>
+      </section>
+      <section class="panel tasks-panel" aria-labelledby="tasks-heading"><div class="panel-heading"><div><p class="eyebrow">02 / CHECK & CORRECT</p><h2 id="tasks-heading">Suggested tasks</h2></div><span class="tag amber">Simulated AI</span></div><div class="progress-section"><div class="progress-label"><strong id="progress-text"></strong><span id="review-status">Full email not reviewed</span></div><progress id="progress" value="0" max="2" aria-label="Tasks checked"></progress><p>A checked card does not mean the summary is complete.</p></div><div id="tasks"></div><div class="completion"><h3>Anything missing?</h3><p>Spotted another requirement? Add it straight to your list. You can also review the full email whenever you need.</p><div class="completion-actions"><button id="quick-add-task" class="primary" type="button">＋ Add new task</button><button id="review-email" class="text-button" type="button">Review full email</button></div></div></section>
+    </div>
+    <p class="footer-note">Your edits stay in this open page only. Reloading or resetting restores the demo. Nothing is sent to a server.</p>
+  </main>
+  <div id="announcement" class="toast" role="status" aria-live="polite"></div>
+  <dialog id="editor"><form id="edit-form"><div class="dialog-heading"><div><p class="eyebrow">YOUR DECISION</p><h2 id="editor-title">Edit task</h2></div><button type="button" id="close-editor" class="icon-button" aria-label="Close editor">×</button></div><label for="task-title">Required action</label><input id="task-title" maxlength="180" required><label for="task-date">Deadline</label><input id="task-date" type="datetime-local"><p class="field-note">Use the date and time stated in the email. Leave blank if no deadline is given. Times are shown as written, without timezone conversion.</p><p id="form-error" role="alert"></p><div class="dialog-actions"><button type="button" id="cancel-edit" class="secondary">Cancel</button><button type="submit" class="primary">Save task</button></div></form></dialog>
+</body>
+</html>

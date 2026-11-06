@@ -1,5 +1,9 @@
 # ESA 学生试用反馈与修改记录
 
+## 图 3 操作截图证据
+
+学生提供两张截图：第一张显示 consent form 来源高亮，卡片仍为 Needs checking，进度为 1 of 2；第二张显示 Confirmed by you，进度为 2 of 2，同时全文复核仍为未完成。两图展示单项确认与全文复核状态分离。原图归档为 05-consent-evidence.png 和 06-consent-confirmed.png，并加入报告；这是操作演示证据，不是独立用户实验。图 4 尚待提供。
+
 ## 图 2 操作截图证据
 
 学生提供四张实际操作截图，按顺序显示：初始 proposal 卡片的 6 November 2026 12:00 错误日期；选中卡片和高亮原文的 9 November 2026 12:00；编辑表单中填写正确日期；保存后 Edited by you 和 1 of 2 tasks checked。原图复制到 assets/storyboards/01–04 文件并插入报告。这支持此条演示流程的可视证据，不等于独立用户实验、全面浏览器测试或性能评估。图 3 和图 4 尚待补齐。

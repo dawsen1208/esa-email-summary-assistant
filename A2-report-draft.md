@@ -109,7 +109,13 @@ Source checked; deadline corrected by the student.
 
 ### Figure 3 Confirming a task
 
-[Insert actual screenshot sequence: consent task → highlighted source → Confirmed by you.]
+**3a Compare the task with its source**
+
+![Figure 3a Selected consent-form task and highlighted source stating 11 November 2026 at 17:00, before confirmation](assets/storyboards/05-consent-evidence.png)
+
+**3b Student confirms the task**
+
+![Figure 3b Consent-form task marked Confirmed by you and progress updated to 2 of 2 tasks checked; full email not yet reviewed](assets/storyboards/06-consent-confirmed.png)
 
 Confirmation records the student's judgement.
 

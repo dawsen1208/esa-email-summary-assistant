@@ -1,8 +1,8 @@
 # ESA 操作截图清单 Interaction screenshot checklist
 
-Status: Figure 2 complete with four student-supplied screenshots in `assets/storyboards/`. Figures 3 and 4 remain pending. Use the current prototype, retain readable text and show both the relevant action and resulting state. Screenshots can be combined into three labelled storyboard figures; a video is not required.
+Status: Figures 2 and 3 complete with six student-supplied screenshots in `assets/storyboards/`. Figure 4 remains pending. Use the current prototype, retain readable text and show both the relevant action and resulting state. Screenshots can be combined into three labelled storyboard figures; a video is not required.
 
-状态：图 2 的四张学生操作截图已收到并存入 `assets/storyboards/`；图 3 和图 4 尚待提供。使用当前原型，确保文字清楚，并展示操作与结果。截图可组合为三组 storyboard，无需录制视频。
+状态：图 2 的四张及图 3 的两张学生操作截图已收到并存入 `assets/storyboards/`；图 4 尚待提供。使用当前原型，确保文字清楚，并展示操作与结果。截图可组合为三组 storyboard，无需录制视频。
 
 ## 图 2 纠正错误日期 Figure 2 Correct an inaccurate deadline
 
@@ -22,6 +22,8 @@ Caption: The student compares the suggested deadline with its source and saves a
 图注：学生将建议日期与原文比较，并保存修正。
 
 ## 图 3 确认正确要求 Figure 3 Confirm an accurate requirement
+
+Complete / 已完成：两张原图已归档并插入报告，依次展示原文高亮与用户确认后的状态。
 
 5. `05-consent-evidence.png`: consent task and its highlighted source showing 11 November 2026 at 17:00.
    中文：consent form 卡片与其高亮原文，显示 2026 年 11 月 11 日 17:00。

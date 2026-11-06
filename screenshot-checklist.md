@@ -1,8 +1,8 @@
 # ESA 操作截图清单 Interaction screenshot checklist
 
-Status: all ten student-supplied screenshots are stored in `assets/storyboards/` and embedded in the draft. Figure 4 needs one continuity check: panel 4c shows Confirmed by you, while panel 4d shows Added by you. Replacing 4c with a capture immediately after adding is recommended. A video is not required.
+Status: all ten student-supplied screenshots are stored in `assets/storyboards/` and embedded in the draft. The replacement panel 4c shows Edited by you, while panel 4d shows Added by you. A continuity check remains: capture 4c immediately after adding, or replace 4d with completion of the same edited-task run. A video is not required.
 
-状态：十张学生截图已全部收到、归档并插入草稿。图 4 仍有一处连续性待核对：4c 为 Confirmed by you，4d 为 Added by you。建议用刚新增保存后、尚未点击确认的截图替换 4c。无需视频。
+状态：十张学生截图已全部收到、归档并插入草稿。替换后的 4c 为 Edited by you，4d 为 Added by you，仍需核对连续性。可截取刚新增后的 4c，或在这次编辑后直接完成复核并替换 4d。无需视频。
 
 ## 图 2 纠正错误日期 Figure 2 Correct an inaccurate deadline
 
@@ -36,7 +36,7 @@ Caption: Confirmation records the student's judgement, not automated verificatio
 
 ## 图 4 补充遗漏事项 Figure 4 Add an omitted requirement
 
-Received / 已收到：四张原图已保存。4c 实际含额外确认操作，与原计划中“刚新增”的状态不同；报告已据实标注，没有修改截图。
+Received / 已收到：四张截图已保存，4c 已按学生要求替换为新图。新图包含编辑操作，与原计划中“刚新增”的状态不同；报告已据实标注，没有修改截图内容。
 
 7. `07-manual-review.png`: select Review full email. Include the ethics-checklist sentence and manual review guidance. The system does not flag this specific omission.
    中文：点击 Review full email，截取 ethics checklist 原文要求和人工复核引导。系统不会自动标记这项遗漏。

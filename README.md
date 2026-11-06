@@ -53,7 +53,7 @@ Codex generated the initial HTML, CSS, JavaScript, and documentation from the st
 
 ## Submission
 
-All ten student-supplied screenshots are available in `assets/storyboards/` and embedded in the report draft. They show deadline correction, consent-form confirmation and manual addition followed by full-email review. Figure 4 has a documented continuity difference: the checklist is Confirmed by you in panel 4c and Added by you in 4d. These images document demonstration states, not an independent user study or complete browser test.
+All ten student-supplied screenshots are available in `assets/storyboards/` and embedded in the report draft. They show deadline correction, consent-form confirmation and manual addition followed by full-email review. Figure 4 has a documented continuity difference: the checklist is Edited by you in panel 4c and Added by you in 4d. These images document demonstration states, not an independent user study or complete browser test.
 
 Current prototype draft snapshot: [db98b8e](https://github.com/dawsen1208/esa-email-summary-assistant/commit/db98b8ee3a69b31ad9111f97e773b48f627aabca). This is an uploaded development snapshot, not the final submission.
 

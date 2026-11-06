@@ -1,5 +1,9 @@
 # ESA 学生试用反馈与修改记录
 
+## 图 4c 替换
+
+按学生要求用新截图替换 09-checklist-added.png。新图显示 Edited by you；报告图注已更新。图 4d 仍为 Added by you，因此暂不将两张图表述为连续状态转换。此前关于旧图 Confirmed by you 的记录保留为历史说明。
+
 ## 图 4 操作截图证据
 
 学生提供四张截图，展示人工全文复核、填写 ethics checklist 及 9 November 2026 12:00、第三张任务卡片，以及完成全文复核后指导卡片收起与原完成提示。第三张 checklist 显示 Confirmed by you，第四张显示 Added by you；两图不能作为未中断的状态转换证据。原图均保留，报告按实际状态标注，并建议补一张刚新增后尚未确认的 4c。未将这些演示写作遗漏检测或独立用户实验。

@@ -129,15 +129,15 @@ Confirmation records the student's judgement.
 
 ![Figure 4b Student enters ethics checklist and 9 November 2026 at 12:00 in the Add new task form](assets/storyboards/08-add-checklist.png)
 
-**4c Manually added task after user confirmation**
+**4c Manually added task after editing**
 
-![Figure 4c Ethics checklist appears as the third task, with Confirmed by you and 3 of 3 tasks checked](assets/storyboards/09-checklist-added.png)
+![Figure 4c Ethics checklist appears as the third task, with Edited by you and 3 of 3 tasks checked](assets/storyboards/09-checklist-added.png)
 
 **4d Full-email review acknowledged**
 
 ![Figure 4d Completion message and Full email reviewed by you; guidance hidden; checklist labelled Added by you](assets/storyboards/10-review-finished.png)
 
-Panels 4c and 4d show different checklist confirmation states, not an uninterrupted transition.
+Panels 4c and 4d show different checklist states: Edited by you and Added by you. They are not an uninterrupted transition.
 
 The student finds the omission; ESA records the addition and acknowledgement.
 

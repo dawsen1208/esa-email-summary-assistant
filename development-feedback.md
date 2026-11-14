@@ -54,12 +54,9 @@ The four captures show manual review, entry of the checklist and its 9 November 
 
 ## Report preparation and checks
 
-The repository report source and PDF use a fixed prototype and screenshot snapshot, `3a4497c`. The original PDF has 187 abstract words and 1,005 main-report words. Its system diagram separates working interface parts, simulated output and planned features. The three storyboards use views of the original captures without changing their task states. The eight-page PDF was rendered and checked page by page.
+The repository report source and PDF match the current submission report: 171 abstract words and 1,048 main-report words, for a total of 1,219. The prototype and original screenshot snapshot remains `3a4497c`. The system diagram separates working interface parts, simulated output and planned features. Four report figures are stored in `assets/report/`; the ten original captures remain in `assets/storyboards/`. The eight-page submission PDF was rendered and checked page by page.
 
 Publication details were checked against ACL Anthology and Microsoft Research. The supplied slides name the University of Birmingham and have no clear year, so the references use n.d. without guessing a personal author.
 
-Later local Word versions use a cover table, a separate abstract, figures before references and simpler English. The latest simple-English version has 171 abstract words and 1,048 main-report words. Structural checks passed, but its final pagination has not been visually verified because the background renderer is unavailable. These Word revisions are separate from the older repository PDF.
+The current report uses a cover table, a separate abstract, figures before references and simpler English. Word content was checked structurally. The PDF was built from the same content without opening a desktop application, and its eight pages were visually checked. The Figure 3 caption was corrected, the reference to a missing lecture list was removed, and nine unique link destinations were checked. DOI identifiers remain in the references, with links to verified open-access versions.
 
-## Documentation review on 14 November 2026
-
-I changed the repository Markdown documentation to English and rewrote the README in my own voice. I kept `A2-report.md` because the PDF builder reads it. I removed the older draft from the main branch because its pending tasks and earlier claims could cause confusion. Git history retains that draft.

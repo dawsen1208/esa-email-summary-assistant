@@ -1,8 +1,18 @@
 # ESA Email Summary Assistant
 
-Xuran Ding
+A Prototype for Checking University Email Summaries
 
-Total report word count: 1,192 (abstract 187; main report 1,005, including section headings). Figures, references and repository links excluded.
+| Field | Details |
+| --- | --- |
+| Module | Intelligent Interactive Systems |
+| Assessment | Assignment 2 Project Report |
+| Author | Xuran Ding |
+| Date | 15 November 2026 |
+| Total words | 1,219 (abstract 171; main report 1,048) |
+
+Total report word count: 1,219 (abstract 171; main report 1,048, including section headings but excluding heading numbers). Figures, references and repository links excluded.
+
+## Repository and submitted version
 
 Repository: https://github.com/dawsen1208/esa-email-summary-assistant
 
@@ -12,149 +22,90 @@ Development record: https://github.com/dawsen1208/esa-email-summary-assistant/bl
 
 Submitted prototype and screenshot snapshot: https://github.com/dawsen1208/esa-email-summary-assistant/commit/3a4497c
 
+Submitted repository documentation snapshot: https://github.com/dawsen1208/esa-email-summary-assistant/commit/7d7a43e696dbfbc765add17c95872dc3d87ca18c
+
 ## Abstract
 
-University emails can contain several deadlines and required actions. Students using AI summaries need ways to inspect these details before acting, particularly when a summary contains an incorrect date or omits a requirement. ESA, Email Summary Assistant, is a local interactive prototype that supports checking through links between suggested tasks and highlighted email passages.
+University emails often include several tasks and deadlines. AI summaries can help students find this information, but they can also give a wrong date or miss a requirement. ESA, Email Summary Assistant, is a local prototype that helps students check suggested tasks against the original email.
 
-Built with HTML, CSS and JavaScript, ESA presents one fictional English university email alongside prepared task cards. Users can inspect supporting passages, confirm or edit tasks, add missing requirements and acknowledge a full-email review. Interface behaviour is implemented; AI extraction and evidence selection are simulated using fixed data. The demonstration includes an incorrect deadline and an omitted ethics checklist.
+The prototype uses HTML, CSS and JavaScript. It shows one fictional university email and prepared task cards. Students can find the source text, confirm a task, change its details and add a missing task. These controls work, but the AI output and source links use fixed data. The example includes a wrong deadline and a missing ethics checklist.
 
-The design applies course concepts concerning provenance, recognition rather than recall, feedback and user control. Development included my self-review and decisions to simplify task addition, remove duplicate controls and reduce the introductory area's size. Full-email review remains user-led: completion does not trigger omission detection or certify completeness. Current checks cover selected state transitions, not usability outcomes. The prototype demonstrates a verification interaction, while its effects on accuracy, checking time and missed requirements remain unevaluated.
+The design uses course ideas about source evidence, memory, feedback and user control. I reviewed the prototype and asked for a simpler way to add tasks, fewer repeated buttons and a smaller introduction. Finishing the full-email review only records the student's choice. It does not check for missing information. The current checks cover selected actions, and there is no user study showing better accuracy or faster checking.
 
 ## Problem and project scope
 
-My A1 review asked whether linking summary claims to source passages could help students check university emails. Maynez et al. (2020) demonstrate unsupported content in generated summaries; Zhang et al. (2022) investigate faithful email task generation. Neither establishes how students will detect remaining errors. ESA develops the verification interaction rather than testing a new generation model. Its scope is one fictional email containing explicit deadlines and required actions. There is no live mailbox, model call or automatic omission detector. This makes the interaction inspectable while limiting what can be claimed about intelligence and effectiveness.
+My A1 review asked whether links from a summary to its source could help students check university emails. Maynez et al. (2020) show that generated summaries can include information that the source does not support. Zhang et al. (2022) study how to generate email tasks that match the source. These studies do not show how students will find all the errors that remain. ESA focuses on how students check a summary. It uses one fictional email with clear tasks and deadlines. It has no live mailbox, AI model call or automatic check for missing requirements. This keeps the example simple, but it limits what the prototype can show.
 
 ## Design rationale
 
-### Making evidence inspectable
+### Making evidence easy to check
 
-Each prepared task has a Find in email control that highlights its source paragraph. Kryscinski et al. (2020) provide evidence that extracted spans can assist consistency checking, although their news-summary setting differs from this project. Lecture 11 distinguishes displaying a source from merely citing it and stresses specific, accessible provenance (University of Birmingham, n.d., L11, pp. 8–10). ESA applies this principle through visible passages. A link enables comparison; it does not prove correctness. The full email remains available because links cannot reveal requirements absent from the summary.
+Each prepared task has a Find in email button. It highlights the related paragraph in the original email. Kryscinski et al. (2020) show that text taken from the source can help people check whether a summary matches it. Their study uses news summaries, so its results may not apply directly to student emails. Lecture 11 explains why source evidence should be clear and easy to access (University of Birmingham, n.d., L11, pp. 8–10). ESA shows the source text so students can compare it with a task. A source link does not prove that the task is correct. Students can still read the full email to look for requirements that have no task card.
 
-### Supporting comparison and correction
+### Helping students compare and correct tasks
 
-Task cards separate actions and deadlines, reflecting the action-oriented email summaries discussed by Zhang et al. (2022). On desktop, source and summary appear side by side; on narrow screens they stack. Visible controls support recognition rather than recalling commands, while keeping information on screen is intended to reduce avoidable memory demands (L05, pp. 8–10). I chose cards and forms because checking dates requires precise entry and comparison, tasks Lecture 07 identifies as poorly served by conversation alone (pp. 16–17). Reduced cognitive load is a design intention, not a measured result.
+The cards show actions and deadlines separately. This follows the focus on email tasks in Zhang et al. (2022). On a desktop, the email and cards appear side by side. On a narrow screen, they appear one below the other. Visible buttons help students recognise what they can do. Keeping both texts on screen may also reduce what they need to remember (L05, pp. 8–10). I chose cards and forms because students need to compare dates and enter exact details. Lecture 07 explains that conversation alone may not suit these tasks (pp. 16–17). I have not measured whether this design reduces mental effort.
 
-Users can confirm a task or edit its wording and deadline. Amershi et al. (2019) support efficient correction when AI is wrong. Lecture 06 connects signifiers with the gulf of execution and visible feedback with the gulf of evaluation (pp. 4–6). Edit task identifies the available action; Save and Cancel provide explicit choices. Updated content and Edited by you show the consequence and its author. Confirmation similarly means Confirmed by you, not machine-verified correctness. Changes last only within the open page, trading persistence for a simpler local demonstration.
+Students can confirm a task or edit its action and deadline. Amershi et al. (2019) explain that users should be able to correct AI errors easily. Lecture 06 discusses clear controls and feedback through the gulf of execution and the gulf of evaluation (pp. 4–6). Edit task shows how to make a change. Save and Cancel give clear choices. Edited by you shows who changed the task. Confirmed by you records the student's decision, not an automatic accuracy check. Changes are lost when the page is reloaded or reset. This avoids adding storage to the local prototype.
 
-### Feedback and completeness
+### Feedback and missing requirements
 
-Selecting evidence marks the card with a blue edge and selection text while highlighting the original passage in yellow. This combines local textual and visual feedback rather than relying solely on a temporary notification. Lecture 04 explains why peripheral cues may be missed and why feedback should fit the current task (pp. 5–6, 18–19). These cues are intended to make the connection noticeable; their accessibility and effectiveness still require browser checks and user evaluation.
+When students select evidence, the card gets a blue border and a text label. The source paragraph turns yellow. This gives feedback in both places. Lecture 04 explains that users may miss feedback away from the task they are doing (pp. 5–6, 18–19). These changes aim to make the link easier to notice, but browser checks and user testing are still needed.
 
-I kept omission review separate from individual task checks. Anything missing? provides direct manual addition and an optional full-email review prompt. Finish full-email review records acknowledgement, displays feedback and closes the guidance card. I considered predefined hints about missed requirements but rejected them to retain the verification scope. Such hints would introduce answer checking and require another explanation of system capability. This follows Lecture 03's emphasis on communicating capability boundaries (pp. 7–8, 12). Users may still finish without noticing an omission; checked progress is not a completeness guarantee.
+Anything missing? lets students add a task directly or open the full-email review guide. Finish full-email review records their decision, shows a message and closes the guide. I decided against hints that name a missing requirement. These hints would add answer checking and would need a clear explanation of how the system works. Lecture 03 stresses the need to explain system limits (pp. 7–8, 12). Students can finish the review and still miss something.
 
-This scope also involves a control trade-off. Students can confirm a card without first opening its evidence, because the interface does not enforce a fixed sequence. That supports flexible checking but permits superficial confirmation. Likewise, manually added tasks count towards checked progress because they originate with the student, not because ESA has validated them. These behaviours need to be explained and evaluated rather than presented as proof of appropriate reliance. The deliberately incorrect deadline and omitted checklist create reproducible demonstration cases; they are not evidence of how frequently such errors occur in real university emails.
+Students can also confirm a card before opening its evidence. This gives them more choice, but they may confirm without checking carefully. Added tasks count towards progress because students entered them, not because ESA checked them. The wrong date and missing checklist are prepared examples. They do not show how often these errors happen in real emails.
 
 ## System and illustrated interaction
 
-Figure 1 separates implemented interface components from simulated intelligence. Prepared task objects supply action text, deadlines and source identifiers to JavaScript state. Rendering creates cards; evidence selection uses an identifier to highlight an HTML paragraph. Save, confirmation and review actions update state and feedback. CSS supplies the responsive letter-inspired presentation. The intended intelligent component would infer tasks and evidence from email content, but fixed fixtures substitute for it here, consistent with Lecture 02's instruction to distinguish existing and stubbed layers (p. 22). User edits do not train a model.
+Figure 1 in Appendix A shows the working parts and the simulated AI output. Prepared data gives JavaScript the task text, deadlines and source IDs. JavaScript displays the cards and uses each source ID to highlight an email paragraph. Saving, confirming and reviewing update the page state and feedback. CSS controls the layout and letter style. A future AI component could find tasks and source text in new emails. This version uses fixed data instead. Lecture 02 asks students to explain which parts work and which are simulated (p. 22). User edits do not train a model.
 
-Figures 2–4 show three walkthroughs. First, the proposal card incorrectly states 6 November 2026; its source states 9 November at 12:00. The student inspects the passage and corrects the date. Second, they compare and confirm the correct consent-form requirement. Third, they read the full email, notice the omitted ethics checklist, add it manually, edit the added task and acknowledge review. New tasks have no generated evidence link. Saving an addition or edit resets full-email review, making a previous acknowledgement distinct from the changed list.
+Figures 2–4 in Appendix A show three examples. In Figure 2, the proposal card gives 6 November 2026, but the email says 9 November at 12:00. The student checks the source and changes the date. In Figure 3, the student checks and confirms the correct consent-form task. In Figure 4, the student reads the full email, finds the missing ethics checklist, adds and edits the task, then finishes the review. Added tasks have no automatic source link. Saving an addition or edit resets the full-email review status because the task list has changed.
 
 ## Development decisions and checks
 
-During my own trial, I found the freedom limited, the flow unclear and the content thin. I identified unnecessary navigation: adding a task required opening review guidance first. I requested direct addition from Anything missing?, then removal of the duplicate add button. I also requested that completion close the review card. These decisions simplify the route without implying automatic checking. My preference for correspondence imagery led to handwritten accents and paper details; I subsequently reduced the oversized introduction to prioritise the working area. These changes address specific observations, not all remaining usability concerns.
+In my own trial, I found that the prototype gave limited choice, the steps were unclear and the content was thin. Adding a task first required opening the review guide. I asked for a direct Add new task button in Anything missing? and removed the repeated add button. I also asked for the guide to close after review. I chose handwritten text and paper details to give the page a letter style. I then made the introduction smaller to leave more room for checking emails. These changes address my feedback, but they do not solve all possible usability problems.
 
-Codex generated the initial code and assisted revisions, checks and report preparation; I supplied the project direction, reviewed the prototype and requested these changes. Simplified-DOM checks passed for addition, cancellation, saving, review reset and guidance dismissal. My screenshots show the three demonstrated interactions; they do not establish accessibility or general usability. Replacing inconsistent screenshot states made the final sequence coherent. Remaining limitations include one fixed example, temporary storage and links not revalidated after edits. Future evaluation should separately measure incorrect-claim correction and omission detection, comparing source-linked checking with full-email access alone. No accuracy or speed improvement is currently claimed.
+Codex generated the first code and helped with changes, checks and report writing. I provided the idea, reviewed the prototype and chose these changes. Checks using a simplified DOM passed for adding, cancelling, saving, resetting review and closing the guide. These checks do not replace browser testing. My screenshots show the three example interactions. I replaced screenshots with different task states so the steps matched. There is no user study or full accessibility check.
+
+The prototype still has one fixed email, temporary storage and source links that are not checked again after edits. Future testing should compare checking with source links and checking with only the full email, and measure date corrections and missed requirements separately.
 
 ## Figures
 
-### Figure 1 System architecture
+### Appendix A Figures
 
-```mermaid
-flowchart TB
-    person[Student]
-    fixtures[Simulated: prepared AI tasks and source IDs]
-    state[Implemented: temporary JS state]
-    cards[Implemented: task cards and status]
-    source[Implemented: original email view]
-    evidence[Implemented: evidence highlight controller]
-    form[Implemented: edit and add form]
-    review[Implemented: review acknowledgement]
-    fixtures -->|initial data| state
-    state -->|render| cards
-    person -->|select evidence| evidence
-    evidence -->|source ID and highlight| source
-    evidence -->|selection feedback| cards
-    person -->|edit or add| form
-    form -->|save| state
-    person -->|confirm| state
-    person -->|finish review| review
-    review -->|acknowledgement flag| state
-    state -->|status feedback| review
-```
+#### A.1  System architecture
 
-Prepared data replaces model inference. All changes remain in the browser page.
+![Figure 1](assets/report/figure-1.png)
 
-### Figure 2 Correcting a deadline
+Figure 1  Implemented, simulated and planned components.
 
-**2a Suggested deadline before checking**
+#### A.2  Correcting an inaccurate deadline
 
-![Figure 2a Proposal task with the incorrect 6 November deadline and Needs checking status](assets/storyboards/01-proposal-before.png)
+![Figure 2](assets/report/figure-2.png)
 
-**2b Source evidence selected**
+Figure 2  Source checked and deadline corrected by the student.
 
-![Figure 2b Selected proposal card and highlighted source stating 9 November 2026 at 12:00](assets/storyboards/02-proposal-evidence.png)
+#### A.3  Confirming an accurate task
 
-**2c Student edits the deadline**
+![Figure 3](assets/report/figure-3.png)
 
-![Figure 2c Edit task dialog with 9 November 2026 at 12:00 entered before saving](assets/storyboards/03-proposal-edit.png)
+Figure 3  Confirmation records the student's decision.
 
-**2d Correction saved**
+#### A.4  Adding a requirement found through manual review
 
-![Figure 2d Saved task showing 9 November at 12:00, Edited by you and 1 of 2 tasks checked](assets/storyboards/04-proposal-saved.png)
+![Figure 4](assets/report/figure-4.png)
 
-Source checked; deadline corrected by the student.
-
-### Figure 3 Confirming a task
-
-**3a Compare the task with its source**
-
-![Figure 3a Selected consent-form task and highlighted source stating 11 November 2026 at 17:00, before confirmation](assets/storyboards/05-consent-evidence.png)
-
-**3b Student confirms the task**
-
-![Figure 3b Consent-form task marked Confirmed by you and progress updated to 2 of 2 tasks checked; full email not yet reviewed](assets/storyboards/06-consent-confirmed.png)
-
-Confirmation records the student's judgement.
-
-### Figure 4 Adding an omitted requirement
-
-**4a Review the complete email**
-
-![Figure 4a Original email and manual review guidance; two checked tasks do not cover the ethics checklist](assets/storyboards/07-manual-review.png)
-
-**4b Enter the missing requirement**
-
-![Figure 4b Student enters ethics checklist and 9 November 2026 at 12:00 in the Add new task form](assets/storyboards/08-add-checklist.png)
-
-**4c Manually added task after editing**
-
-![Figure 4c Ethics checklist appears as the third task, with Edited by you and 3 of 3 tasks checked](assets/storyboards/09-checklist-added.png)
-
-**4d Full-email review acknowledged**
-
-![Figure 4d Completion message and Full email reviewed by you; guidance hidden; checklist retains Edited by you](assets/storyboards/10-review-finished.png)
-
-The checklist retains Edited by you as the student completes full-email review.
-
-The student finds the omission; ESA records the addition and acknowledgement.
+Figure 4  The student finds the omission; ESA records the changes and acknowledgement.
 
 ## References
 
-Amershi, S., Weld, D., Vorvoreanu, M., Fourney, A., Nushi, B., Collisson, P., Suh, J., Iqbal, S., Bennett, P.N., Inkpen, K., Teevan, J., Kikin-Gil, R. and Horvitz, E. (2019). Guidelines for Human-AI Interaction. *Proceedings of CHI 2019*, Article 3, pp. 1–13. https://doi.org/10.1145/3290605.3300233.
+Amershi, S., Weld, D., Vorvoreanu, M., Fourney, A., Nushi, B., Collisson, P., Suh, J., Iqbal, S., Bennett, P.N., Inkpen, K., Teevan, J., Kikin-Gil, R. and Horvitz, E. (2019). Guidelines for Human-AI Interaction. Proceedings of CHI 2019, Article 3, pp. 1–13. doi:10.1145/3290605.3300233. Open-access version: https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf
 
-Kryscinski, W., McCann, B., Xiong, C. and Socher, R. (2020). Evaluating the Factual Consistency of Abstractive Text Summarization. *Proceedings of EMNLP 2020*, pp. 9332–9346. https://doi.org/10.18653/v1/2020.emnlp-main.750.
+Kryscinski, W., McCann, B., Xiong, C. and Socher, R. (2020). Evaluating the Factual Consistency of Abstractive Text Summarization. Proceedings of EMNLP 2020, pp. 9332–9346. doi:10.18653/v1/2020.emnlp-main.750. Open-access version: https://aclanthology.org/2020.emnlp-main.750/
 
-Maynez, J., Narayan, S., Bohnet, B. and McDonald, R. (2020). On Faithfulness and Factuality in Abstractive Summarization. *Proceedings of ACL 2020*, pp. 1906–1919. https://doi.org/10.18653/v1/2020.acl-main.173.
+Maynez, J., Narayan, S., Bohnet, B. and McDonald, R. (2020). On Faithfulness and Factuality in Abstractive Summarization. Proceedings of ACL 2020, pp. 1906–1919. doi:10.18653/v1/2020.acl-main.173. Open-access version: https://aclanthology.org/2020.acl-main.173/
 
-Zhang, K., Chen, J. and Yang, D. (2022). Focus on the Action: Learning to Highlight and Summarize Jointly for Email To-Do Items Summarization. *Findings of ACL 2022*, pp. 4095–4106. https://doi.org/10.18653/v1/2022.findings-acl.323.
+Zhang, K., Chen, J. and Yang, D. (2022). Focus on the Action: Learning to Highlight and Summarize Jointly for Email To-Do Items Summarization. Findings of ACL 2022, pp. 4095–4106. doi:10.18653/v1/2022.findings-acl.323. Open-access version: https://aclanthology.org/2022.findings-acl.323/
 
-University of Birmingham (n.d.). *Intelligent Interactive Systems* [lecture slides]. L02–L11 below identify the lecture titles and PDF page numbers used in the text. Undated supplied teaching materials; accessed 6 November 2026.
-
-- L02: Ingredients of an Intelligent Interactive System.
-- L03: Human-Centred Intelligent Interaction and the Shape of the Module.
-- L04: Perception, Attention and Feedback.
-- L05: Memory, Mental Models and Cognitive Load.
-- L06: Action, Error, Agency and Decision.
-- L07: Conversational Interfaces.
-- L11: Retrieval, Grounding and Provenance.
+University of Birmingham (n.d.). Intelligent Interactive Systems [lecture slides]. University of Birmingham. Accessed 6 November 2026.

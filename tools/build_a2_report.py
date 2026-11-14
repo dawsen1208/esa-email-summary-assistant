@@ -52,7 +52,7 @@ def footer(c, doc):
 story = [Paragraph('ESA Email Summary Assistant', ParagraphStyle('title', fontName='Helvetica-Bold', fontSize=23, leading=29, spaceAfter=10)),
          Paragraph('Xuran Ding', styles['body']), Paragraph(countline, styles['small'])]
 repo = 'https://github.com/dawsen1208/esa-email-summary-assistant'
-for label, url in [('Repository',repo),('README and development record',repo+'/blob/3a4497c/README.md'),('Submitted prototype and screenshot snapshot',repo+'/commit/3a4497c')]:
+for label, url in re.findall(r'^(Repository|README|Development record|Submitted prototype and screenshot snapshot|Submitted repository documentation snapshot): (https://\S+)$', text.split('## Abstract',1)[0], flags=re.M):
     story.append(Paragraph(f'{label}: <link href="{url}" color="#294cb4">{url}</link>', styles['small']))
 story.append(Spacer(1, 7)); story.append(Paragraph('Abstract', styles['h1']))
 append_md(story, abstract); append_md(story, main)
@@ -135,7 +135,7 @@ crop('05-consent-evidence.png',(.51,.53,.80,.72),38,134,366,218)
 label(437,493,'3b  Select Confirm correct','The status becomes Confirmed by you; progress is 2 of 2.')
 crop('06-consent-confirmed.png',(.51,.245,.80,.31),437,393,366,75)
 crop('06-consent-confirmed.png',(.51,.53,.80,.72),437,134,366,218)
-foot('Confirmation records the student judgement. Full-email review remains a separate acknowledgement.')
+foot("Confirmation records the student's decision. Full-email review remains a separate acknowledgement.")
 c.showPage()
 heading('Figure 4  Adding a requirement found through manual review','The student finds the omission. ESA provides a form and records review acknowledgement.')
 label(38,496,'4a  Review the original email','Read requirements beyond the two suggested tasks.')

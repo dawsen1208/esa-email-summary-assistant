@@ -1,5 +1,7 @@
 # ESA Email Summary Assistant
 
+Prose word count: 522 (excluding headings, code and setup commands).
+
 ESA is a local prototype for checking simulated AI summaries of university emails. Suggested tasks appear beside the original email, with source highlights, editable details and manual review controls. The main purpose is to support comparison before task details are accepted or changed.
 
 [Report source](A2-report.md) · [Report PDF](output/pdf/ESA_A2_Report.pdf) · [Development record](development-feedback.md) · [Screenshot checklist](screenshot-checklist.md)

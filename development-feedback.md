@@ -6,6 +6,12 @@ I defined ESA around the A1 question of whether source links could help students
 
 I used Codex to generate the initial code and to help with later revisions, checks, documentation and report layout. The decisions below record what I reviewed and chose; they do not claim that I wrote all the code without assistance.
 
+### Original, reused and assisted material
+
+- Original contribution: I defined the checking problem, chose the project scope and letter style, reviewed the interaction, requested changes and captured the ten screenshots. These are design and review contributions, not a claim that all code was written without assistance.
+- Reused sources: the papers and course materials listed in the report informed the design. No external application code or ready-made UI template was incorporated into the prototype. Standard report-building libraries are tools, not an original contribution.
+- Assisted work: Codex generated the initial interface code and helped with later revisions, checks and report material. The fictional email and prepared task data support a demonstration; they are not real mailbox data.
+
 ## Self-review on 6 November 2026
 
 In my own trial, I found limited freedom, an unclear flow and thin content. This was my own feedback, not an independent participant study. I did not collect timing or accuracy data.
@@ -51,3 +57,17 @@ The first capture shows the highlighted 11 November 2026 at 17:00 source, Needs 
 ### Figure 4 Adding the ethics checklist
 
 The four captures show manual review, entry of the checklist and its 9 November 2026 at 12:00 deadline, the added task after editing and the completed full-email review. I replaced `09-checklist-added.png` and `10-review-finished.png` after noticing different checklist labels. Both final captures now show Edited by you. The last capture also shows Full email reviewed by you, the existing completion message and the closed guide. Earlier captures remain in Git history.
+
+## Review and adaptation of AI output
+
+### Example 1 Removing an extra step from task addition
+
+The initial AI-generated interface required opening the review guide before adding a missing task. During my trial, I judged this step unnecessary because a requirement already found in the email should be added directly. I requested Add new task in Anything missing? and removal of the repeated add button.
+
+The resulting flow is Add new task → empty form → Save or Cancel. The [state-check script](tools/check-direct-add.cjs) checks that the form opens while the review guide stays hidden, cancellation leaves the original two tasks unchanged, and saving creates a third card. The saved task has no automatic source link, and full-email review resets to unfinished. These checks passed. They verify selected state changes, not browser layout or usability.
+
+### Example 2 Checking the meaning of review completion
+
+I reviewed the AI-assisted completion behaviour against the intended scope. I decided to keep Finish full-email review as a personal acknowledgement and not add hints naming an omitted requirement. Completion should show the existing message and close the guide without claiming that the task list is complete.
+
+The same script completes review without adding the ethics checklist. It checks that the review status becomes complete, the guide closes and the message remains: “Full-email review recorded. Individual task checks remain your decision.” It also checks that the guide can reopen. These checks passed. The final screenshot, [10-review-finished.png](assets/storyboards/10-review-finished.png), records the completion message and closed guide after the manual task-addition sequence. It does not show automatic omission detection.

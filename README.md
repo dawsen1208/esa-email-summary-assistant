@@ -1,6 +1,6 @@
 # ESA Email Summary Assistant
 
-Prose word count: 522 (excluding headings, code and setup commands).
+Prose word count: 609 (excluding headings, code and setup commands).
 
 ESA is a local prototype for checking simulated AI summaries of university emails. Suggested tasks appear beside the original email, with source highlights, editable details and manual review controls. The main purpose is to support comparison before task details are accepted or changed.
 
@@ -27,11 +27,11 @@ Demonstration sequence:
 
 - Source comparison: the A1 question about checking summary claims led to a layout with the full email beside the task cards. Find in email connects each prepared card to a source paragraph.
 - Visual style: the ESA name, paper details and handwritten accents create a letter style. A smaller introduction gives the working area more space.
-- Direct controls: self-review identified limited freedom, unclear steps and thin content. Direct task addition replaced an extra navigation step, the repeated add button was removed, and review completion now closes the guide.
-- Review limits: hints naming a missing requirement were excluded. Manual reading and task addition remain available without automatic omission detection.
+- Direct controls: review of the initial AI-generated interface identified an unnecessary step before task addition. Direct Add new task replaced the route through the review guide, and the repeated add button was removed. Script checks confirmed that the form opens without the guide, cancellation keeps the original task count, and saving creates a new card.
+- Review limits: hints naming a missing requirement were excluded. Checks of the AI-assisted completion behaviour confirmed that review can finish without adding the checklist, closes the guide and shows only the acknowledgement message. Manual reading and task addition remain available without automatic omission detection.
 - Screenshot consistency: ten captures document the three demonstration cases. Replacement checklist captures use matching status labels, and captions follow the recorded screen states.
 
-The [development record](development-feedback.md) explains the decisions, changes and checks. Self-review feedback does not represent an independent user study.
+The [development record](development-feedback.md) explains the decisions, changes and checks, with two examples of reviewing AI output. Project-specific design choices and original screenshots are separated from cited research and course material, standard report-building tools and Codex-assisted work. No external application code or ready-made UI template was incorporated into the prototype. Self-review feedback does not represent an independent user study.
 
 ## AI assistance and contribution
 

@@ -51,12 +51,3 @@ The first capture shows the highlighted 11 November 2026 at 17:00 source, Needs 
 ### Figure 4 Adding the ethics checklist
 
 The four captures show manual review, entry of the checklist and its 9 November 2026 at 12:00 deadline, the added task after editing and the completed full-email review. I replaced `09-checklist-added.png` and `10-review-finished.png` after noticing different checklist labels. Both final captures now show Edited by you. The last capture also shows Full email reviewed by you, the existing completion message and the closed guide. Earlier captures remain in Git history.
-
-## Report preparation and checks
-
-The repository report source and PDF match the current submission report: 171 abstract words and 1,048 main-report words, for a total of 1,219. The prototype and original screenshot snapshot remains `3a4497c`. The system diagram separates working interface parts, simulated output and planned features. Four report figures are stored in `assets/report/`; the ten original captures remain in `assets/storyboards/`. The eight-page submission PDF was rendered and checked page by page.
-
-Publication details were checked against ACL Anthology and Microsoft Research. The supplied slides name the University of Birmingham and have no clear year, so the references use n.d. without guessing a personal author.
-
-The current report uses a cover table, a separate abstract, figures before references and simpler English. Word content was checked structurally. The PDF was built from the same content without opening a desktop application, and its eight pages were visually checked. The Figure 3 caption was corrected, the reference to a missing lecture list was removed, and nine unique link destinations were checked. DOI identifiers remain in the references, with links to verified open-access versions.
-

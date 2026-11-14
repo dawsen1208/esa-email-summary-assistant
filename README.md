@@ -1,44 +1,44 @@
 # ESA Email Summary Assistant
 
-I designed ESA as a local prototype for checking simulated AI summaries of university emails. My aim is to make suggested tasks easy to compare with the original email before confirming or changing them.
+ESA is a local prototype for checking simulated AI summaries of university emails. Suggested tasks appear beside the original email, with source highlights, editable details and manual review controls. The main purpose is to support comparison before task details are accepted or changed.
 
 [Report source](A2-report.md) · [Report PDF](output/pdf/ESA_A2_Report.pdf) · [Development record](development-feedback.md) · [Screenshot checklist](screenshot-checklist.md)
 
 ## Status and scope
 
-I defined a working interface with an original-email view, task cards, source highlights, confirmation, editing with Save and Cancel, direct task addition, progress, review acknowledgement and reset. Changes last until the page is reloaded or reset. Finish full-email review records a personal acknowledgement, not a guarantee that every requirement has been found.
+Working features include the original-email view, task cards, source highlights, confirmation, editing with Save and Cancel, direct task addition, progress, review acknowledgement and reset. Changes last until the page is reloaded or reset. Finish full-email review records an acknowledgement; completion does not guarantee that every requirement has been found.
 
-I kept AI extraction and task-to-source links simulated with prepared data. There is no connected mailbox, model, backend or analytics service. Live extraction, arbitrary email input, automatic source selection and permanent storage remain undeveloped. I have not measured an improvement in accuracy or checking speed.
+AI extraction and task-to-source links are simulated with prepared data. No mailbox, model, backend or analytics service is connected. Live extraction, arbitrary email input, automatic source selection and permanent storage remain undeveloped. Improvements in accuracy and checking speed have not been measured.
 
 ## Run and inspect
 
-Open `index.html` in a browser. No installation, internet connection, account or API key is needed. I used a fictional email in HTML, JavaScript state and controls, and three CSS files for the layout and letter style. Dates keep the time written in the email without timezone conversion.
+Open `index.html` in a browser. No installation, internet connection, account or API key is needed. HTML contains the fictional email, JavaScript manages page state and controls, and three CSS files provide the layout and letter style. Dates keep the time written in the email without timezone conversion.
 
-To follow the demonstration:
+Demonstration sequence:
 
-1. Select Find in email on the proposal card. Compare its deadline with the highlighted source, then change 6 November to 9 November 2026 at 12:00.
+1. Select Find in email on the proposal card. Compare the suggested deadline with the highlighted source, then change 6 November to 9 November 2026 at 12:00.
 2. Check the consent-form deadline of 11 November at 17:00 and select Confirm correct.
-3. Read the full email, find the missing ethics checklist and add it through Add new task in Anything missing?.
-4. Select Finish full-email review to record the review and close the guide. Review full email opens the guide again.
+3. Read the full email, find the missing ethics checklist and add the requirement through Add new task in Anything missing?.
+4. Select Finish full-email review to record completion and close the guide. Review full email opens the guide again.
 
 ## Design decisions
 
-- I developed the A1 idea around checking evidence instead of accepting a summary without review. I kept the full email visible beside the task cards.
-- I chose the ESA name and a letter style with paper details and handwritten accents. I later reduced the introduction to give the working area more space.
-- In my own trial, I found limited freedom, unclear steps and thin content. I requested direct task addition, removed the repeated add button and asked for the review guide to close after completion.
-- I rejected hints that name a missing requirement. I kept manual review and task addition without adding automatic omission detection.
-- I captured ten screenshots and replaced inconsistent checklist states. The last two checklist panels both show Edited by you. I kept captions consistent with the captured states.
+- Source comparison: the A1 question about checking summary claims led to a layout with the full email beside the task cards. Find in email connects each prepared card to a source paragraph.
+- Visual style: the ESA name, paper details and handwritten accents create a letter style. A smaller introduction gives the working area more space.
+- Direct controls: self-review identified limited freedom, unclear steps and thin content. Direct task addition replaced an extra navigation step, the repeated add button was removed, and review completion now closes the guide.
+- Review limits: hints naming a missing requirement were excluded. Manual reading and task addition remain available without automatic omission detection.
+- Screenshot consistency: ten captures document the three demonstration cases. Replacement checklist captures use matching status labels, and captions follow the recorded screen states.
 
-I explain these choices and the remaining limits in the [development record](development-feedback.md). My own trial is not an independent user study.
+The [development record](development-feedback.md) explains the decisions, changes and checks. Self-review feedback does not represent an independent user study.
 
 ## AI assistance and contribution
 
-I used Codex to generate the initial code and to help with later revisions, checks and report preparation.
+Initial code generation, later revisions, checks and report preparation were supported by Codex.
 
 ## Checks and report files
 
-`node tools/check-direct-add.cjs` checks selected state changes with a simplified DOM. These checks cover direct addition, cancellation, saving and review behaviour; they do not replace browser or usability testing. A full accessibility and responsive-layout audit remains open.
+`node tools/check-direct-add.cjs` checks selected state changes with a simplified DOM. Coverage includes direct addition, cancellation, saving and review behaviour. These checks do not replace browser or usability testing. A full accessibility and responsive-layout audit remains open.
 
-I keep `A2-report.md` as the editable source for the repository PDF. To rebuild it, install `report-requirements.txt` and run `python tools/build_a2_report.py`. Python is not needed to run ESA. Original screenshots remain in `assets/storyboards/`.
+`A2-report.md` is the editable source for the repository PDF. To rebuild the PDF, install `report-requirements.txt` and run `python tools/build_a2_report.py`. Python is not needed to run ESA. Original screenshots remain in `assets/storyboards/`.
 
-The prototype and screenshot snapshot is [3a4497c](https://github.com/dawsen1208/esa-email-summary-assistant/commit/3a4497c). Later commits update the documentation. I removed the old report draft from the main branch to avoid conflicting versions; it remains in Git history.
+The prototype and screenshot snapshot is [3a4497c](https://github.com/dawsen1208/esa-email-summary-assistant/commit/3a4497c). Later commits update the documentation. The old report draft was removed from the main branch to avoid conflicting versions and remains available in Git history.

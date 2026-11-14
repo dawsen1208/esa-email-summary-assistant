@@ -33,8 +33,6 @@ I explain these choices and the remaining limits in the [development record](dev
 
 ## AI assistance and contribution
 
-I defined the problem, chose the project scope and visual style, reviewed the prototype, identified unnecessary steps, requested interaction changes and supplied the screenshots. I also chose to keep review completion separate from automatic checking.
-
 I used Codex to generate the initial code and to help with later revisions, checks and report preparation.
 
 ## Checks and report files

@@ -1,63 +1,65 @@
-# ESA 学生试用反馈与修改记录
+# ESA Development Feedback and Change Record
 
-## A2 报告整理与验证
+## Project direction and contribution
 
-完成 A2-report.md 和 output/pdf/ESA_A2_Report.pdf，正文 1005 字、摘要 187 字，总计 1192 字。使用已核查课程概念和四篇 A1 文献，出版记录核对 ACL Anthology 与 Microsoft Research。课件封面为 University of Birmingham，未给明确年份，使用 n.d.，不猜测个人作者。
+I defined ESA around the A1 question of whether source links could help students check university email summaries. I chose a local HTML, CSS and JavaScript prototype with one fictional email. I chose the name, letter style, scope of manual review and three demonstration cases. I reviewed the prototype, requested changes and captured the screenshots.
 
-系统图区分真实界面、模拟输出和计划功能；三个分镜用 PDF 局部视图展示学生原图，不改变 PNG 内容或状态。八页渲染逐页检查。报告记录学生决定与 Codex 协助，不将状态脚本或截图当作独立实验。引用固定原型与截图版本 3a4497c，后续提交只补充报告及文档。
+I used Codex to generate the initial code and to help with later revisions, checks, documentation and report layout. The decisions below record what I reviewed and chose; they do not claim that I wrote all the code without assistance.
 
-## 图 4d 替换并解决状态差异
+## Self-review on 6 November 2026
 
-学生提供完成复核后的新截图，替换 10-review-finished.png。图 4c 与图 4d 的 checklist 均显示 Edited by you；4d 同时显示 Full email reviewed by you、原有完成提示，并收起复核卡片。当前报告与清单中的连续性警示已移除；此前记录保留为修订历史。这些截图仅支持已展示的操作状态，不代表全面测试或自动遗漏检测。
+In my own trial, I found limited freedom, an unclear flow and thin content. This was my own feedback, not an independent participant study. I did not collect timing or accuracy data.
 
-## 图 4c 替换
+### Direct task addition
 
-按学生要求用新截图替换 09-checklist-added.png。新图显示 Edited by you，图注按此更新。随后学生再次补拍图 4d，当前两张图状态一致，相关问题已解决。
+I found that adding a task required opening the full-email review guide first. I asked for Add new task directly in Anything missing? to remove this extra step.
 
-## 图 4 操作截图证据
+Before: Anything missing? → Review full email → review guide → Add a missing task → form.
 
-学生提供四张截图，展示人工全文复核、填写 ethics checklist 及 9 November 2026 12:00、第三张任务卡片，以及完成全文复核后指导卡片收起与原完成提示。首次提交的后两张状态不一致，随后由学生补拍替换，当前均显示 Edited by you。旧图仅可从 Git 历史追溯，当前报告使用替换版本。未将这些演示写作遗漏检测或独立用户实验。
+After: Anything missing? → Add new task → form.
 
-## 图 3 操作截图证据
+I kept Review full email as a separate option. Saving a new task creates an Added by you card and resets the full-email review status. Finish full-email review still records a personal acknowledgement and does not detect missing requirements.
 
-学生提供两张截图：第一张显示 consent form 来源高亮，卡片仍为 Needs checking，进度为 1 of 2；第二张显示 Confirmed by you，进度为 2 of 2，同时全文复核仍为未完成。两图展示单项确认与全文复核状态分离。原图归档为 05-consent-evidence.png 和 06-consent-confirmed.png，并加入报告；这是操作演示证据，不是独立用户实验。后续图 4 已补齐。
+The visible add button relates to the signifiers and gulf of execution discussed in Lecture 06. Removing a step also relates to unnecessary memory demands in Lecture 05. These are reasons for the design, not evidence of measured improvements.
 
-## 图 2 操作截图证据
+### One add button and a closing review guide
 
-学生提供四张实际操作截图，按顺序显示：初始 proposal 卡片的 6 November 2026 12:00 错误日期；选中卡片和高亮原文的 9 November 2026 12:00；编辑表单中填写正确日期；保存后 Edited by you 和 1 of 2 tasks checked。原图复制到 assets/storyboards/01–04 文件并插入报告。这支持此条演示流程的可视证据，不等于独立用户实验、全面浏览器测试或性能评估。后续图 3 和图 4 已补齐。
+I then asked to remove Add a missing task from Review for missing requirements. Add new task in Anything missing? became the single entry point. I also asked for Finish full-email review to show the existing message and close the guide. Focus returns to Review full email, which can reopen the guide.
 
-## 顶部空间调整
+Checks using a simplified DOM covered opening the empty form, saving, cancelling, resetting review, closing and reopening the guide, and keeping the existing completion message. These checks do not establish browser layout, focus behaviour in a real browser or accessibility. The three concerns from my trial are not all resolved by this change.
 
-学生通过截图指出顶部介绍占用空间过大。将双行大标题改为紧凑标题，说明缩为一句，大便签改为一行手写提示；减少导航栏高度及介绍区间距，小屏隐藏装饰便签。目的在于让邮件和任务更早进入视野，保留信件风格。此次仅修改布局与文案长度，不改变交互流程。浏览器视觉复核待进行。
+### Scope of review feedback
 
-## 2026 年 11 月 6 日 学生本人试用反馈
+I considered showing a hint naming a missed requirement after Finish full-email review. I rejected it because it would add answer checking and would need an explanation of how the system knows what was missed. I kept manual reading and task addition. Checked progress is not a guarantee that the task list is complete.
 
-学生原话：“自由度一般，流程感不是很强，整体原型的内容比较单薄。”
+## Visual changes
 
-这是项目作者的自我试用与反思，不是独立参与者实验，也没有计时或准确率数据。
+I chose paper details, email imagery and handwritten accents to make ESA look like a checking desk. After reviewing the screen, I found that the introduction took too much space. I asked for a compact title, one short explanation, a smaller note and reduced spacing. The decorative note is hidden on small screens. These changes give the email and tasks more space without changing the review flow. A full responsive-layout audit remains open.
 
-### 具体判断和决定
+## Screenshot evidence
 
-学生指出 Anything missing? 卡片的原按钮先引导全文复核，再提供新增任务入口，存在不必要的跳转。学生选择让这张卡片直接提供添加新任务的操作。
+I captured ten screenshots and stored them in `assets/storyboards/`. They show selected desktop actions, not a general usability result.
 
-修改前：Anything missing? → Review full email → 全文复核区域 → Add a missing task → 表单。
+### Figure 2 Correcting the proposal deadline
 
-修改后：Anything missing? → Add new task → 表单。
+The four captures show the wrong 6 November 2026 deadline, the highlighted source stating 9 November at 12:00, the edit form and the saved correction. The result shows Edited by you and 1 of 2 tasks checked. Files `01` to `04` record this sequence.
 
-保留较次要的 Review full email 入口，使学生可以自行选择“先补充已发现的要求”或“继续检查邮件”，不再把全文复核当作新增任务的前置步骤。表单保存后仍生成 Added by you 卡片，并重置全文复核状态。
+### Figure 3 Confirming the consent-form task
 
-Finish full-email review 继续仅记录用户确认，不检测遗漏。此轮没有新增预设答案比较、AI 调用或自动来源匹配。
+The first capture shows the highlighted 11 November 2026 at 17:00 source, Needs checking and progress of 1 of 2. The second shows Confirmed by you and 2 of 2. Full-email review is still unfinished. Files `05` and `06` show that checking one task is separate from reviewing the whole email.
 
-### 与课程概念的关系
+### Figure 4 Adding the ethics checklist
 
-这是对学生反馈的设计解释：直接可见的 Add new task 让可执行操作更明确，可联系 L06 的 signifier 和 gulf of execution；去掉中间步骤可联系 L05 的 extraneous cognitive load。减少步骤是可观察的结构变化，不能据此声称已经测得更低认知负荷或更快完成时间。
+The four captures show manual review, entry of the checklist and its 9 November 2026 at 12:00 deadline, the added task after editing and the completed full-email review. I replaced `09-checklist-added.png` and `10-review-finished.png` after noticing different checklist labels. Both final captures now show Edited by you. The last capture also shows Full email reviewed by you, the existing completion message and the closed guide. Earlier captures remain in Git history.
 
-### 本轮检查和待续事项
+## Report preparation and checks
 
-使用脚本检查新增按钮可直接打开空白表单、保存新增卡片、取消不保存，以及不新增 checklist 也能完成全文复核。脚本使用简化 DOM，不构成浏览器布局、键盘焦点或视觉验收。真实浏览器复核仍待进行。
+The repository report source and PDF use a fixed prototype and screenshot snapshot, `3a4497c`. The original PDF has 187 abstract words and 1,005 main-report words. Its system diagram separates working interface parts, simulated output and planned features. The three storyboards use views of the original captures without changing their task states. The eight-page PDF was rendered and checked page by page.
 
-“自由度一般”“流程感不强”“内容偏单薄”保留为后续改进问题。本轮只实施学生明确提出的直接新增交互，尚不能宣称三个问题已经全部解决。下一次试用可检查直接新增是否符合预期，以及用户是否清楚如何继续全文复核。
+Publication details were checked against ACL Anthology and Microsoft Research. The supplied slides name the University of Birmingham and have no clear year, so the references use n.d. without guessing a personal author.
 
-### 后续调整 统一新增入口并收起复核卡片
+Later local Word versions use a cover table, a separate abstract, figures before references and simpler English. The latest simple-English version has 171 abstract words and 1,048 main-report words. Structural checks passed, but its final pagination has not been visually verified because the background renderer is unavailable. These Word revisions are separate from the older repository PDF.
 
-根据学生截图反馈，移除 Review for missing requirements 下的 Add a missing task，只保留 Anything missing? 中的 Add new task。点击 Finish full-email review 后显示原来的完成提示，同时隐藏复核卡片；焦点返回 Review full email，用户可再次打开复核卡片。没有新增遗漏检测。脚本检查覆盖移除重复入口、打开与收起、原提示文案及再次打开；浏览器视觉验证仍待进行。
+## Documentation review on 14 November 2026
+
+I changed the repository Markdown documentation to English and rewrote the README in my own voice. I kept `A2-report.md` because the PDF builder reads it. I removed the older draft from the main branch because its pending tasks and earlier claims could cause confusion. Git history retains that draft.

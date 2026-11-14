@@ -1,62 +1,40 @@
-# ESA 操作截图清单 Interaction screenshot checklist
+# ESA Interaction Screenshot Checklist
 
-Status: all ten student-supplied screenshots are stored in `assets/storyboards/` and embedded in the draft. Replacement panels 4c and 4d both show Edited by you; the earlier checklist-state inconsistency is resolved. A video is not required.
+All ten captures are stored in `assets/storyboards/` and included in the report source. The replacement panels 4c and 4d both show Edited by you. The earlier checklist-state difference is resolved.
 
-状态：十张学生截图已全部收到、归档并插入草稿。替换后的 4c 和 4d 均为 Edited by you，先前 checklist 状态不一致的问题已解决。无需视频。
+## Figure 2 Correct an inaccurate deadline
 
-## 图 2 纠正错误日期 Figure 2 Correct an inaccurate deadline
+Complete: four original captures show the following steps.
 
-Complete / 已完成：四张原图已按以下顺序归档，未修改截图内容，并已插入报告草稿。
+1. `01-proposal-before.png`: the proposal card shows 6 November 2026 at 12:00 and Needs checking.
+2. `02-proposal-evidence.png`: Find in email selects the card and highlights the source deadline of 9 November 2026 at 12:00.
+3. `03-proposal-edit.png`: the Edit task form contains the correct deadline before saving.
+4. `04-proposal-saved.png`: the saved card shows the correct deadline and Edited by you.
 
-1. `01-proposal-before.png`: proposal task showing 6 November 2026 at 12:00 and Needs checking.
-   中文：修改前的 proposal 卡片，显示错误日期 2026 年 11 月 6 日 12:00，以及 Needs checking。
-2. `02-proposal-evidence.png`: select Find in email. Include the blue-selected card and highlighted original deadline, 9 November 2026 at 12:00.
-   中文：点击 Find in email，截取蓝边选中卡片和原文高亮，原文日期为 2026 年 11 月 9 日 12:00。
-3. `03-proposal-edit.png`: Edit task dialog with the replacement deadline entered, before saving.
-   中文：编辑弹窗中已填写正确日期，但尚未点击保存。
-4. `04-proposal-saved.png`: saved task showing the replacement deadline and Edited by you.
-   中文：保存后的卡片，显示正确日期和 Edited by you。
+Caption: I compare the suggested deadline with its source and save a correction.
 
-Caption: The student compares the suggested deadline with its source and saves a correction.
+## Figure 3 Confirm an accurate requirement
 
-图注：学生将建议日期与原文比较，并保存修正。
+Complete: two original captures show source checking and confirmation.
 
-## 图 3 确认正确要求 Figure 3 Confirm an accurate requirement
+5. `05-consent-evidence.png`: the consent-form card and highlighted source show 11 November 2026 at 17:00.
+6. `06-consent-confirmed.png`: Confirm correct changes the label to Confirmed by you and updates progress to 2 of 2. Full-email review is still unfinished.
 
-Complete / 已完成：两张原图已归档并插入报告，依次展示原文高亮与用户确认后的状态。
+Caption: Confirmation records my decision, not an automatic accuracy check.
 
-5. `05-consent-evidence.png`: consent task and its highlighted source showing 11 November 2026 at 17:00.
-   中文：consent form 卡片与其高亮原文，显示 2026 年 11 月 11 日 17:00。
-6. `06-consent-confirmed.png`: select Confirm correct; show Confirmed by you and the updated progress.
-   中文：点击 Confirm correct 后，显示 Confirmed by you 和更新后的检查进度。
+## Figure 4 Add an omitted requirement
 
-Caption: Confirmation records the student's judgement, not automated verification.
+Complete: four captures show manual review, task entry, an edit and review completion. Panels 4c and 4d use the replacement captures.
 
-图注：确认状态记录学生的判断，不代表系统已自动验证。
+7. `07-manual-review.png`: Review full email opens the guide. The email includes the ethics-checklist requirement. The system does not flag this specific omission.
+8. `08-add-checklist.png`: Add new task in Anything missing? opens the form. It contains the checklist action and 9 November 2026 at 12:00.
+9. `09-checklist-added.png`: the manually added checklist appears after editing, labelled Edited by you.
+10. `10-review-finished.png`: Finish full-email review shows the existing completion message and Full email reviewed by you. The guide is closed and the checklist keeps Edited by you.
 
-## 图 4 补充遗漏事项 Figure 4 Add an omitted requirement
+Caption: I find and add the missing checklist, then record that I have reviewed the full email.
 
-Complete / 已完成：四张截图已保存，4c 和 4d 已按学生要求替换。最终分镜展示手动复核、新增表单、编辑后的新增任务和全文复核完成状态；报告按截图实际标签标注，没有修改截图内容。
+## Capture guidance
 
-7. `07-manual-review.png`: select Review full email. Include the ethics-checklist sentence and manual review guidance. The system does not flag this specific omission.
-   中文：点击 Review full email，截取 ethics checklist 原文要求和人工复核引导。系统不会自动标记这项遗漏。
-8. `08-add-checklist.png`: select Add new task in Anything missing?; show the form with the checklist action and 9 November 2026 at 12:00 entered.
-   中文：点击 Anything missing? 中的 Add new task；表单填写附上 ethics checklist 的要求，日期为 2026 年 11 月 9 日 12:00。
-9. `09-checklist-added.png`: the supplied replacement shows the manually added checklist after editing, labelled Edited by you.
-   中文：当前替换图展示手动新增任务编辑保存后的状态，标签为 Edited by you。
-10. `10-review-finished.png`: select Finish full-email review. Capture the existing completion message and Full email reviewed by you status; the guidance card should be hidden. Reopen review first if necessary.
-    中文：点击 Finish full-email review，截取原有完成提示和 Full email reviewed by you 状态；复核卡片应已收起。如卡片已关闭，先重新打开。
+Open About this demo and select Reset demo once before starting. Follow the three sequences in order. Keep the same browser zoom and window size. Remove unrelated browser borders only if the source, controls and feedback remain visible. If the completion message disappears, reopen the guide and finish the review again before capturing it.
 
-Caption: The student notices and adds the omitted checklist, then acknowledges their own full-email review.
-
-图注：学生自行发现并补充遗漏的 checklist，再确认已完成全文复核。
-
-## 截图说明 Capture guidance
-
-Reset once at the start, then perform the sequences in order. Open About this demo to access Reset demo. Keep a consistent browser zoom and window size. Crop unrelated browser chrome, but do not cut away evidence needed to interpret an interaction. If the review completion message disappears before capture, reopen review and finish again.
-
-开始前在 About this demo 中点击 Reset demo，然后依次完成三个场景。保持浏览器缩放和窗口大小一致。可以裁掉无关浏览器边框，但保留理解交互所需的原文、控件与反馈。完成提示消失后，可重新打开复核卡片并再次点击完成。
-
-These ten captures can be arranged as three storyboard figures. They are a recommended evidence set, not an assignment requirement for exactly ten screenshots. Brief panel labels are enough; keep design explanations in the counted report body. Save final images in `assets/storyboards/` and replace the report placeholders with the actual illustrated sequences.
-
-这十张截图可拼成三组 storyboard。十张只是建议数量，不是作业硬性要求。每个分镜使用简短标签，设计解释仍放在计入字数的正文里。最终图片保存到 `assets/storyboards/`，并替换报告中的截图占位。
+These ten captures form three storyboard figures. Ten is the chosen evidence set, not a claim that the assignment requires exactly ten screenshots. Keep panel labels short and explain design choices in the report body. The captures show the demonstrated actions; they do not establish usability, accessibility or automatic omission detection.

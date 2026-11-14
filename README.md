@@ -1,45 +1,46 @@
 # ESA Email Summary Assistant
 
-Prose word count: 571 (whitespace count excluding headings, this line, list markers and setup commands).
+I designed ESA as a local prototype for checking simulated AI summaries of university emails. My aim is to make suggested tasks easy to compare with the original email before confirming or changing them.
 
-A local prototype for checking simulated AI summaries of university emails. [A2 report PDF](output/pdf/ESA_A2_Report.pdf) · [Editable report](A2-report.md) · [Development record](development-feedback.md) · [Bilingual screenshot checklist](screenshot-checklist.md).
+[Report source](A2-report.md) · [Report PDF](output/pdf/ESA_A2_Report.pdf) · [Development record](development-feedback.md) · [Screenshot checklist](screenshot-checklist.md)
 
 ## Status and scope
 
-Implemented: original-email view, task cards, source highlights, confirmation, editing with save/cancel, direct manual task addition, progress, full-email review acknowledgement and reset. Changes last until reload/reset. Completing review records the user's acknowledgement; it does not certify completeness.
+I defined a working interface with an original-email view, task cards, source highlights, confirmation, editing with Save and Cancel, direct task addition, progress, review acknowledgement and reset. Changes last until the page is reloaded or reset. Finish full-email review records a personal acknowledgement, not a guarantee that every requirement has been found.
 
-Simulated: AI extraction, initial task content and task-to-source mappings are prepared data. No model, mailbox, backend or analytics is connected. Automatic omission detection is outside scope. Live extraction, arbitrary email input, automated evidence selection, persistent storage and comparative evaluation remain undeveloped. No accuracy or speed improvement is claimed.
+I kept AI extraction and task-to-source links simulated with prepared data. There is no connected mailbox, model, backend or analytics service. Live extraction, arbitrary email input, automatic source selection and permanent storage remain undeveloped. I have not measured an improvement in accuracy or checking speed.
 
 ## Run and inspect
 
-Open `index.html` in a current browser. No installation, internet, account or API key is required. HTML holds the fictional email; JavaScript manages state and interactions; three CSS files provide base styles and the correspondence theme. Dates retain the written email time without timezone conversion.
+Open `index.html` in a browser. No installation, internet connection, account or API key is needed. I used a fictional email in HTML, JavaScript state and controls, and three CSS files for the layout and letter style. Dates keep the time written in the email without timezone conversion.
 
-Walkthrough: inspect the proposal evidence and correct 6 November to 9 November 2026 at 12:00; verify and confirm the consent-form deadline of 11 November at 17:00; read the full email and add the omitted ethics checklist manually. Add new task opens the form directly. Finish full-email review displays acknowledgement and closes guidance; Review full email reopens it.
+To follow the demonstration:
 
-## Development record
+1. Select Find in email on the proposal card. Compare its deadline with the highlighted source, then change 6 November to 9 November 2026 at 12:00.
+2. Check the consent-form deadline of 11 November at 17:00 and select Confirm correct.
+3. Read the full email, find the missing ethics checklist and add it through Add new task in Anything missing?.
+4. Select Finish full-email review to record the review and close the guide. Review full email opens the guide again.
 
-- Initial assisted build: translated the A1 verification idea into source and task panels with fixed evidence links, making the interaction demonstrable without live inference.
-- Student design decisions: adopted the ESA name and correspondence style, then reduced the introduction to prioritise the working area.
-- Student self-review found limited freedom, unclear flow and thin content. Direct task addition replaced an indirect route; duplicate controls were removed and review completion now closes guidance. Broader usability concerns remain unevaluated.
-- Scope decision: rejected specific omission-answer hints. Manual review and addition remain available without implying automated detection.
-- Evidence checks: the student supplied ten screenshots. Inconsistent checklist states were identified and replaced; the final two panels retain Edited by you. Eight report pages were rendered and visually inspected.
+## Design decisions
 
-Detailed decisions and checks are in [development-feedback.md](development-feedback.md). Earlier changes are documented there; the initial Git import did not reconstruct a fictional commit history.
+- I developed the A1 idea around checking evidence instead of accepting a summary without review. I kept the full email visible beside the task cards.
+- I chose the ESA name and a letter style with paper details and handwritten accents. I later reduced the introduction to give the working area more space.
+- In my own trial, I found limited freedom, unclear steps and thin content. I requested direct task addition, removed the repeated add button and asked for the review guide to close after completion.
+- I rejected hints that name a missing requirement. I kept manual review and task addition without adding automatic omission detection.
+- I captured ten screenshots and replaced inconsistent checklist states. The last two checklist panels both show Edited by you. I kept captions consistent with the captured states.
+
+I explain these choices and the remaining limits in the [development record](development-feedback.md). My own trial is not an independent user study.
 
 ## AI assistance and contribution
 
-Codex generated the initial code and assisted revisions, checks, report text, diagram and PDF layout. The student supplied the project idea, scope decisions, self-review and screenshots. No external code template or live model was reused.
+I defined the problem, chose the project scope and visual style, reviewed the prototype, identified unnecessary steps, requested interaction changes and supplied the screenshots. I also chose to keep review completion separate from automatic checking.
 
-Examples of reviewing assistance: the student rejected omission feedback, requested direct task addition, removed duplicate controls and reduced the introduction. Screenshot review prompted replacement captures; report labels were adapted to actual states rather than changing images. The student remains responsible for the submitted claims and references.
+I used Codex to generate the initial code and to help with later revisions, checks and report preparation.
 
-## Checks and optional report rebuild
+## Checks and report files
 
-`node tools/check-direct-add.cjs` checks selected state transitions using a simplified DOM. It is not a browser or usability test. Screenshots document the demonstrated desktop interactions; a full accessibility and responsive audit remains outstanding.
+`node tools/check-direct-add.cjs` checks selected state changes with a simplified DOM. These checks cover direct addition, cancellation, saving and review behaviour; they do not replace browser or usability testing. A full accessibility and responsive-layout audit remains open.
 
-To rebuild the report, install `report-requirements.txt` and run `python tools/build_a2_report.py`. Python is not needed to run ESA. PDF focus views leave the original PNGs unchanged.
+I keep `A2-report.md` as the editable source for the repository PDF. To rebuild it, install `report-requirements.txt` and run `python tools/build_a2_report.py`. Python is not needed to run ESA. Original screenshots remain in `assets/storyboards/`.
 
-## Submission files
-
-Submitted prototype and screenshot snapshot: [3a4497c](https://github.com/dawsen1208/esa-email-summary-assistant/commit/3a4497c). Later commits package the report and documentation. The PDF includes repository links, rationale, architecture, three illustrated examples and references. Publication records were checked against ACL Anthology and Microsoft Research; undated course slides are attributed to the University of Birmingham.
-
-Original screenshots are in `assets/storyboards/`. The earlier report draft is retained as historical working material; use `A2-report.md` and the PDF. Course PDFs, extracted lecture text and local authoring notes are excluded. No additional ZIP or video is required.
+The prototype and screenshot snapshot is [3a4497c](https://github.com/dawsen1208/esa-email-summary-assistant/commit/3a4497c). Later commits update the documentation. I removed the old report draft from the main branch to avoid conflicting versions; it remains in Git history.
